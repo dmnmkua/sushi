@@ -382,7 +382,7 @@ function Menu() {
   this.changeContent_ = event => {
     // проверка на нажатие на ссылку
     if(event.target.tagName === 'A') {
-      // сброс статов
+      // сброс классов
       this.reset_();
       // если ID нажатого блока совпадает с ID навигации, то применяется класс к выбранному блоку
       for(let i = 0; i < this.navItem.length; i++) {
@@ -391,7 +391,7 @@ function Menu() {
         }
       }
       // если название класса карточки меню совпадает с ID выбранного навигациооного элемента, то к данным карточкам применяется класс
-      for(let j = 0; j <this.menuItem.length; j++) {
+      for(let j = 0; j < this.menuItem.length; j++) {
         if(this.menuItem[j].classList.contains(event.target.getAttribute('id'))) {
           this.menuItem[j].classList.add('menu__item--active');
         }

@@ -501,7 +501,7 @@ body {
     background: rgba(255, 255, 255, 0.5);
     color: #fc7844; }
   .nav__link--active {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     color: #fc7844; }
 
 .main-front {
