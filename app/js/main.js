@@ -358,10 +358,14 @@ function Menu() {
   this.navItem = document.querySelectorAll('.nav__item');
   this.menuItem = document.querySelectorAll('.menu__item');
   this.navLink = document.querySelectorAll('.nav__link');
+  this.mainFront = document.querySelector('.main-front');
 
   // сброс классов
   this.reset_ = () => {
     // сброс классов навигации
+    if(!this.mainFront.classList.contains('main-front--hide')) {
+      this.mainFront.classList.add('main-front--hide');
+    }
     for(var j = 0; j < this.navLink.length; j++) {
       if(this.navLink[j].classList.contains('nav__link--active')) {
         this.navLink[j].classList.remove('nav__link--active')
