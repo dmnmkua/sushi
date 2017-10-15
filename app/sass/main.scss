@@ -1,0 +1,27 @@
+// normalize
+@import "../libs/normalize/normalize";
+//font awesome
+@import "../fonts/font-awesome/font-awesome.min.css";
+// han-zi
+@import "../fonts/han-zi/han-zi.css";
+
+$mainColor: #a61f22;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  background: #FFEFC5 url(../img/bg.jpg) no-repeat top center fixed;
+  background-size: cover;
+  font-family: 'HanZiW10', sans-serif;
+}
+
+@import "layout/header.scss";
+@import "layout/maincontent.scss";
