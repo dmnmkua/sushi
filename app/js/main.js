@@ -380,8 +380,11 @@ function Menu() {
   }
 
   this.changeContent_ = event => {
+    // удаляем действие по умолчанию у ссылок
+    // event.preventDefault();
     // проверка на нажатие на ссылку
     if(event.target.tagName === 'A') {
+
       // сброс классов
       this.reset_();
       // если ID нажатого блока совпадает с ID навигации, то применяется класс к выбранному блоку
